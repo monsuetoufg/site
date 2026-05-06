@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - LAMetrics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    /* Topbar institucional */
+    .topbar {
+      background-color: #0b3d91;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    .topbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topbar-left {
+      font-weight: 500;
+    }
+
+    .topbar-right a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .topbar-right a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container do dashboard */
+    .dashboard-container {
+      width: 100%;
+      height: calc(100vh - 50px); /* altura total menos a barra */
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="topbar-content">
+      <div class="topbar-left">
+        LAM - Laboratório de Análise de Microdados
+      </div>
+      <div class="topbar-right">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="metodologia.html">Metodologia</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-container">
+    <iframe 
+      src="https://app.powerbi.com/view?r=eyJrIjoiZThjMjVlYjctZjM3My00ZjVjLTg1YjYtMTQzYmJlY2Y3MWE1IiwidCI6ImU2YzUxYzNhLWMwZDYtNDhjZC05OGM5LTNkZmM3N2FiZDk5MyJ9&pageName=0d3803ff6a993c25ca00"
+      allowFullScreen="true">
+    </iframe>
+  </div>
+
+</body>
+</html>
